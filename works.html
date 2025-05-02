@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ed & Ksyusha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img\Icon of site.png">
+</head>
+
+<body>
+<header>
+
+    <a href="index.html" title="Перехід на головну сторінку"><img src="img\MyLogo.png" class="img-MyLogo"></a> 
+    
+    <div class="box"></div>
+
+    <div class="box2"></div>
+
+    <nav >
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="works.html">Наші роботи</a></li>
+            <li><a href="#">Галерея</a>
+                <ul>
+                    <li><a href="gallery.html#1">Чудове навколо нас</a></li>
+                    <li><a href="gallery2.html#1">Улюблені міста</a></li>
+                    <li><a href="gallery3.html#1">Єгипет</a></li>
+                    <li><a href="gallery4.html#1">Львів</a></li>
+                    <li><a href="gallery5.html#1">Зима</a></li>
+                </ul>
+            </li>
+            <li><a href="info.html">Про нас</a></li>
+        </ul>
+    </nav>
+   
+    <!-- <a href="index.html"><img src="img\MyLogo.png" class="imgLogo"></a> -->
+
+</header>   
+
+<br>
+<p class="sheet-title">Наші роботи</p> 
+<br> 
+<hr>
+<br> 
+
+<div class="container">
+        
+    <div class="img-container">
+
+        
+
+        <div class="img">
+            <img src="img\Photo\Our Handmade\1.jpg" alt="">
+
+        </div>
+
+        <div class="img">
+            <img src="img\Photo\Our Handmade\2.jpg" alt="">
+
+        </div>
+
+        <div class="img">
+            <img src="img\Photo\Our Handmade\3.jpg" alt="">
+
+        </div>
+
+        <!-- <div class="img">
+            <img src="img\Photo\Beauty nearby with us\4.jpg" alt="">
+
+        </div>
+
+        <div class="img">
+            <img src="img\Photo\Beauty nearby with us\5.jpg" alt="">
+
+        </div>
+
+        <div class="img">
+            <img src="img\Photo\Beauty nearby with us\6.jpg" alt="">
+
+        </div>
+
+        <div class="img">
+            <img src="img\Photo\Beauty nearby with us\7.jpg" alt="">
+
+        </div>
+
+        <div class="img">
+            <img src="img\Photo\Beauty nearby with us\8.jpg" alt="">
+
+        </div>
+
+        <div class="img">
+            <img src="img\Photo\Beauty nearby with us\9.jpg" alt="">
+
+        </div>
+
+        <div class="img">
+            <img src="img\Photo\Beauty nearby with us\10.jpg" alt="">
+
+        </div>
+        
+        <div class="img">
+            <img src="img\Photo\Beauty nearby with us\11.jpg" alt="">
+
+        </div>
+
+        <div class="img">
+            <img src="img\Photo\Beauty nearby with us\12.jpg" alt="">
+            
+        </div>
+        
+        <div class="img">
+            <img src="img\Photo\Beauty nearby with us\13.jpg" alt="">
+            
+        </div>
+        
+        <div class="img">
+            <img src="img\Photo\Beauty nearby with us\14.jpg" alt="">
+            <a name="2"></a> 
+        </div>
+        
+        <div class="img">
+            <img src="img\Photo\Beauty nearby with us\15.jpg" alt="">
+
+        </div>
+
+        <div class="img">
+            <img src="img\Photo\Beauty nearby with us\16.jpg" alt="">
+
+        </div>
+
+        <div class="img">
+            <img src="img\Photo\Beauty nearby with us\17.jpg" alt="">
+
+        </div>
+
+        <div class="img">
+            <img src="img\Photo\Beauty nearby with us\18.jpg" alt="">
+
+        </div>
+
+        <div class="img">
+            <img src="img\Photo\Beauty nearby with us\19.jpg" alt="">
+
+        </div>
+
+        <div class="img">
+            <img src="img\Photo\Beauty nearby with us\20.jpg" alt="">
+
+        </div>
+
+        <div class="img">
+            <img src="img\Photo\Beauty nearby with us\21.jpg" alt="">
+
+        </div>
+
+        <div class="img">
+            <img src="img\Photo\Beauty nearby with us\22.jpg" alt="">
+
+        </div>
+
+        <div class="img">
+            <img src="img\Photo\Beauty nearby with us\23.jpg" alt="">
+
+        </div> -->
+
+        
+
+        
+        
+                            
+        <div class="pop-up">
+            
+            <span class="span">&times;</span>
+            <img src="img\Photo\Beauty nearby with us\1.jpg" alt="">
+        </div>   
+        
+    </div>
+    
+   
+</div>
+
+
+<script>
+     document.querySelectorAll('.img-container img').forEach ( img => {
+        img.onclick = () => {
+            document.querySelector('.pop-up').style.display='block';
+            document.querySelector('.pop-up img').src = img.getAttribute('src');
+        }
+    });
+
+    document.querySelector('.pop-up span').onclick = () => {
+        document.querySelector('.pop-up').style.display = 'none'; 
+    }
+</script>
+
+</body>
+
+</html>

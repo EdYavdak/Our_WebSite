@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ed & Ksyusha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img\Icon of site.png">
+</head>
+
+<body>
+    <a name="1"></a> 
+<header>
+      
+    <a href="index.html" title="Перехід на головну сторінку"><img src="img\MyLogo.png" class="img-MyLogo"></a>
+    
+    <div class="box"></div>
+
+    <div class="box2"></div>
+
+    
+    <nav >
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="works.html">Наші роботи</a></li>
+            <li><a href="#">Галерея</a>
+                <ul>
+                    <li><a href="gallery.html#1">Чудове навколо нас</a></li>
+                    <li><a href="#1">Улюблені міста</a></li>
+                    <li><a href="gallery3.html#1">Єгипет</a></li>
+                    <li><a href="gallery4.html#1">Львів</a></li>
+                    <li><a href="gallery5.html#1">Зима</a></li>
+                </ul>
+            </li>
+            <li><a href="info.html">Про нас</a></li>
+        </ul>
+    </nav>
+   
+    
+    
+</header>   
+
+<br>
+<p class="sheet-title">Галерея</p> 
+<br> 
+<hr>
+<br> 
+            
+    <br>
+    <p class="gallery-title">Улюблені міста</p> 
+    <br><br>
+
+
+    <div class="container">
+
+        <div class="img-container">
+
+            
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\1.jpg" alt="">
+
+            </div>
+
+            <!-- <div class="img">
+                <img src="img\Photo\Favorite places\2.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\3.jpg" alt="">
+
+            </div> -->
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\4.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\5.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\6.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\7.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\8.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\9.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\10.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\11.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\12.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\13.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\14.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\15.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\16.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\17.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\18.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\19.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\20.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\21.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\22.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\23.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\24.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\25.jpg" alt="">
+
+            </div>
+
+            <div class="img">
+                <img src="img\Photo\Favorite places\26.jpg" alt="">
+
+            </div>
+            
+                        
+
+            <div class="pop-up">
+                <span class="span">&times;</span>
+                <img src="img\Photo\Favorite places\3.jpg" alt="">
+            </div>   
+
+        </div>
+        
+
+     </div>
+
+    
+    <script>
+         document.querySelectorAll('.img-container img').forEach ( img => {
+            img.onclick = () => {
+                document.querySelector('.pop-up').style.display='block';
+                document.querySelector('.pop-up img').src = img.getAttribute('src');
+            }
+        });
+
+        document.querySelector('.pop-up span').onclick = () => {
+            document.querySelector('.pop-up').style.display = 'none'; 
+        }
+    </script>
+
+</body>
+
+</html>
