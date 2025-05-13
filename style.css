@@ -28,18 +28,18 @@ body{
 
     position:absolute ;
     top: 10px;
-    left: 40px;
+    left: 30px;
     
-    animation: render 8s ease-in-out infinite;
+    animation: render 5s ease-in-out infinite;
 }
 
 @keyframes render {
     0% {
-        top: 10px; left: 40px;
+        top: 10px; left: 30px;
         background:#afc0f8;
         border-radius: 30%;
     }
-    25% {
+    /* 25% {
         top: 10px; left: 190px;
         background:#35457a;
         border-radius: 50%;
@@ -49,10 +49,10 @@ body{
         left: 190px;
         background:#afc0f8;
         border-radius: 30%;
-    }
-    75% {
-        top: 80px;
-        left: 40px;
+    } */
+    50% {
+        top: 40px;
+        left: 30px;
         background:#35457a;
         border-radius: 50%;
     }
@@ -64,19 +64,19 @@ body{
     background-color: #afc0f8;
 
     position: absolute;
-    top: 80px;
-    left: 190px;
+    top: 40px;
+    left: 170px;
     
-    animation: render2 8s ease-in-out infinite;
+    animation: render2 5s ease-in-out infinite;
 }
 
 @keyframes render2 {
     0% {
-        top: 80px; left: 190px;
+        top: 40px; left: 170px;
         background:#afc0f8;
         border-radius: 30%;
     }
-    25% {
+    /* 25% {
         top: 80px; left: 40px;
         background:#35457a;
         border-radius: 50%;
@@ -86,10 +86,10 @@ body{
         left: 40px;
         background:#afc0f8;
         border-radius: 30%;
-    }
-    75% {
+    } */
+    50% {
         top: 10px;
-        left: 190px;
+        left: 170px;
         background:#35457a;
         border-radius: 50%;
     }
@@ -101,6 +101,7 @@ header{
     position: sticky;/*позиционирования хедера не исчезать при скролинге*/
     top: 0;/*указатель места от которого хедер остается не исчезая во время скролинга*/
     width: 100%;
+    padding-left: 50px;
     box-shadow: 0 5px 5px #141a2c;/*тень ниже хедера*/
     border-radius: 0 0 15px 15px;
     display: flex;/*отображение как гибкого контейнера */
@@ -116,19 +117,27 @@ header{
 
 nav{
     
-    margin-right:15% ;  /*смещение заглавного меню влево*/
+    margin-right:0% ;  /*смещение заглавного меню влево*/
     /* margin-left: 75%; */
     
 }
 
-header nav ul li {
+@media screen and (max-width: 800px){
+    nav ul li {
+        display: none;
+    }
+
+}
+
+nav ul li {
     position: relative;
     float: left;/*расположение элементов li слева*/   
 }
 
 
-header nav ul li a {
-    padding: 35px;/*отступы для элементов главного  меню*/
+nav ul li a {
+    padding: 13px 13px ;/*отступы для элементов главного  меню*/
+    padding-right: 40px;
     font-size: 140%;/*размер шрифта*/
     font-weight: bold;
     color: #2b2b2b;/*цвет шрифта*/
@@ -137,14 +146,10 @@ header nav ul li a {
     transition: .4s;
 }
 
-@media screen and (max-width: 1050px){
-    nav{
-        margin-top: 80px;
-    }
-}
+
 
 /*изменение цвета элемента главного меню при наведении на него курсором*/
-header nav ul li a:hover {
+nav ul li a:hover {
     transform: scale(1.1);
     /* background:#7c8b5f;
     color: rgb(228, 228, 228); */
@@ -224,11 +229,11 @@ h4{text-indent: 60px;
  }
 
  .img-MyLogo {
-    position: absolute;
-    top: 25px;
-    left: 65px;
+    /* position: relative; */
+    /* top: 25px; */
     
-    z-index: 101;
+    
+    /* z-index: 101; */
     transition: .3s;
  }
 
@@ -300,16 +305,16 @@ h4{text-indent: 60px;
     left: 50%;
     transform: translate(-50%, -40%);
     
-    width: 1200px;
-    height: 700px;
+    width: 60%;
+    height: 60%;
     object-fit: contain;
     
  }
 
  .container .pop-up span{
     position: fixed;
-    top: 120px;
-    right: 40px;
+    top: 26%;
+    right: 10%;
     width: 40px;
     height: 40px;
     background: #a5c0fc;
@@ -329,5 +334,4 @@ h4{text-indent: 60px;
  .span:active {
     color: #ffffff;
  }
-
  
