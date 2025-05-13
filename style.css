@@ -122,7 +122,7 @@ nav{
     
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 700px){
     nav ul li {
         display: none;
     }
@@ -139,7 +139,7 @@ nav ul li a {
     padding: 13px 13px ;/*отступы для элементов главного  меню*/
     padding-right: 40px;
     font-size: clamp(0.875rem, 0.486rem + 0.89vw, 1.375rem) ;/*размер шрифта*/
-    font-weight: 600;
+    font-weight: 500;
     color: #2b2b2b;/*цвет шрифта*/
     display: block;
     font-family: Arial, Helvetica, sans-serif;
@@ -188,11 +188,11 @@ nav ul li:hover > ul{
     /* position: absolute;
     top: 80px;  */
     /* right: 6%;  */
-    font-size: 40px;
+    font-size: clamp(1.563rem, 0.833rem + 1.67vw, 2.5rem);
     color:  #c7c7c7;
     margin-left: 4%; 
     /* margin-top: 5%; */
-    font-family: cursive;  
+    font-family: Arial, Helvetica, sans-serif;  
     font-weight: 1000;
     /* text-shadow: 2px 2px #d4d4d4b2; */
     
@@ -205,7 +205,7 @@ h4{text-indent: 60px;
 
 .head-text{
     font-size: clamp(0.875rem, 0.625rem + 1.25vw, 1.563rem);
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
     margin-left: 4%;
     color: #adcf6e;
     line-height: 2.2;
