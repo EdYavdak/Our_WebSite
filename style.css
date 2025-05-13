@@ -122,7 +122,7 @@ nav{
     
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 700px){
     nav ul li {
         display: none;
     }
@@ -139,11 +139,18 @@ nav ul li a {
     padding: 13px 13px ;/*отступы для элементов главного  меню*/
     padding-right: 40px;
     font-size: 140%;/*размер шрифта*/
-    font-weight: bold;
+    font-weight: 600;
     color: #2b2b2b;/*цвет шрифта*/
     display: block;
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
     transition: .4s;
+}
+
+@media (max-width: 1600px){
+     nav ul li a {
+        font-size: 80%;
+    }
+
 }
 
 
