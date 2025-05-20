@@ -372,11 +372,7 @@ nav ul li:hover > ul {
 }
 
 
-h4 {
-
-    text-indent: 60px;
-
-}
+h4 {text-indent: 60px;}
 
 
 .head-text {
@@ -397,7 +393,7 @@ h4 {
     box-shadow: 10px 10px 10px  #7aa3aa;
     margin-left: 4%;
     margin-right: 4%;
-    margin-bottom: 1% ;
+    margin-bottom: 1%;
 
 }
 
